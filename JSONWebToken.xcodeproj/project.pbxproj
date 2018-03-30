@@ -160,7 +160,9 @@
 		71D917A01C07573300FA5CDE /* TestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 71D9179F1C07573300FA5CDE /* TestCertificate.cer */; };
 		71EA699C1C0320720081AF85 /* TokenValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA699B1C0320720081AF85 /* TokenValidator.swift */; };
 		71EA699F1C0323320081AF85 /* TokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA699E1C0323320081AF85 /* TokenSigner.swift */; };
-		C5020674206EE2BE00355225 /* JSONWebToken.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C5020673206EE2BE00355225 /* JSONWebToken.podspec */; };
+		C5020676206EE31400355225 /* JSONWebToken.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C5020675206EE31400355225 /* JSONWebToken.podspec */; };
+		C5020678206EE35F00355225 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C5020677206EE35F00355225 /* LICENSE */; };
+		C502067A206EE36400355225 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C5020679206EE36400355225 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -277,7 +279,9 @@
 		71EA699B1C0320720081AF85 /* TokenValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenValidator.swift; sourceTree = "<group>"; };
 		71EA699E1C0323320081AF85 /* TokenSigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenSigner.swift; sourceTree = "<group>"; };
 		71EA69A41C035EA90081AF85 /* HMACTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
-		C5020673206EE2BE00355225 /* JSONWebToken.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JSONWebToken.podspec; sourceTree = SOURCE_ROOT; };
+		C5020675206EE31400355225 /* JSONWebToken.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONWebToken.podspec; sourceTree = "<group>"; };
+		C5020677206EE35F00355225 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C5020679206EE36400355225 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,7 +341,9 @@
 		717ACFC41BFB6842004E01D0 = {
 			isa = PBXGroup;
 			children = (
-				C5020673206EE2BE00355225 /* JSONWebToken.podspec */,
+				C5020679206EE36400355225 /* README.md */,
+				C5020677206EE35F00355225 /* LICENSE */,
+				C5020675206EE31400355225 /* JSONWebToken.podspec */,
 				717ACFD01BFB6842004E01D0 /* JSONWebToken */,
 				717ACFDC1BFB6842004E01D0 /* JSONWebTokenTests */,
 				719156991D1D3BE900FC55C9 /* JSONWebToken tvOS */,
@@ -604,21 +610,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Antoine Palazzolo";
 				TargetAttributes = {
 					71642F3E1D9BB1F2008BBA95 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = GFAP5NDM59;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					717ACFCD1BFB6842004E01D0 = {
 						CreatedOnToolsVersion = 7.1.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					717ACFD71BFB6842004E01D0 = {
 						CreatedOnToolsVersion = 7.1.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 						TestTargetID = 71642F3E1D9BB1F2008BBA95;
 					};
@@ -667,7 +674,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5020674206EE2BE00355225 /* JSONWebToken.podspec in Resources */,
+				C502067A206EE36400355225 /* README.md in Resources */,
+				C5020678206EE35F00355225 /* LICENSE in Resources */,
+				C5020676206EE31400355225 /* JSONWebToken.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -927,7 +936,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Kreactive.TestContainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -945,7 +954,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kreactive.TestContainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -957,14 +966,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1007,14 +1022,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1048,7 +1069,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1062,7 +1083,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1083,7 +1104,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kreactive.JSONWebToken;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1095,7 +1116,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kreactive.JSONWebTokenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestContainer.app/TestContainer";
 			};
 			name = Debug;
@@ -1108,7 +1129,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kreactive.JSONWebTokenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestContainer.app/TestContainer";
 			};
 			name = Release;
