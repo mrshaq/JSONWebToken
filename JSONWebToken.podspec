@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'JSONWebToken'
-    s.version      = '1.0'
+    s.version      = '1.1'
     s.summary      = 'Swift lib for decoding, validating, signing and verifying JWT'
     s.homepage     = "https://github.com/mrshaq/JSONWebToken"
     s.license      = { :type => 'MIT', :file => 'LICENSE' }
