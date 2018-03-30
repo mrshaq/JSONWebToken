@@ -160,6 +160,7 @@
 		71D917A01C07573300FA5CDE /* TestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 71D9179F1C07573300FA5CDE /* TestCertificate.cer */; };
 		71EA699C1C0320720081AF85 /* TokenValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA699B1C0320720081AF85 /* TokenValidator.swift */; };
 		71EA699F1C0323320081AF85 /* TokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA699E1C0323320081AF85 /* TokenSigner.swift */; };
+		C5020674206EE2BE00355225 /* JSONWebToken.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C5020673206EE2BE00355225 /* JSONWebToken.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -276,6 +277,7 @@
 		71EA699B1C0320720081AF85 /* TokenValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenValidator.swift; sourceTree = "<group>"; };
 		71EA699E1C0323320081AF85 /* TokenSigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenSigner.swift; sourceTree = "<group>"; };
 		71EA69A41C035EA90081AF85 /* HMACTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
+		C5020673206EE2BE00355225 /* JSONWebToken.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JSONWebToken.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,6 +337,7 @@
 		717ACFC41BFB6842004E01D0 = {
 			isa = PBXGroup;
 			children = (
+				C5020673206EE2BE00355225 /* JSONWebToken.podspec */,
 				717ACFD01BFB6842004E01D0 /* JSONWebToken */,
 				717ACFDC1BFB6842004E01D0 /* JSONWebTokenTests */,
 				719156991D1D3BE900FC55C9 /* JSONWebToken tvOS */,
@@ -664,6 +667,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5020674206EE2BE00355225 /* JSONWebToken.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1191,6 +1195,7 @@
 				71642F501D9BB1F2008BBA95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		717ACFC81BFB6842004E01D0 /* Build configuration list for PBXProject "JSONWebToken" */ = {
 			isa = XCConfigurationList;
